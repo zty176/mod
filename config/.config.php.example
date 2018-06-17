@@ -16,7 +16,7 @@ $System_Config['sessionDriver'] = 'cookie';
 $System_Config['cacheDriver'] = 'cookie';
 $System_Config['tokenDriver'] = 'db';
 
-//$System_Config['version'] = '<a href="https://www.zhaoj.in">Glzjin</a> mod-2016042210000';
+//$System_Config['version'] = '<a href="http://qianjihu.cn">Glzjin</a> mod-2016042210000';
 
 // mu key 用于校验ss-go mu的请求,半角逗号分隔
 $System_Config['muKey'] = 'mupass';
@@ -27,7 +27,7 @@ $System_Config['mailDriver'] = 'smtp';   // mailgun or smtp or sendgrid
 $System_Config['user_class_expire_default']='2';
 
 #用户注册等级，在注册时设置。
-$System_Config['user_class_default']='9';
+$System_Config['user_class_default']='0';
 
 #用户注册客户端数量限制，0为不限制
 $System_Config['user_conn']='2';
@@ -38,16 +38,16 @@ $System_Config['user_speedlimit']='2';
 
 
 #邀请新用户获得流量奖励，单位G
-$System_Config['invite_gift']='2';
+$System_Config['invite_gift']='0.1';
 
 #新用户通过私人邀请链接注册，获得奖励金额（鼓励消费）
-$System_Config['invite_get_money']='10';
+$System_Config['invite_get_money']='2';
 
 // 用户签到设置
 $System_Config['checkinMin'] = '100';       // 签到最少流量 单位MB
 $System_Config['checkinMax'] = '200';       // 签到最多流量
 
-$System_Config['defaultTraffic'] = '10';      // 用户初始流量 单位GB
+$System_Config['defaultTraffic'] = '0.3';      // 用户初始流量 单位GB
 
 // 注册后获得的邀请码数量
 $System_Config['inviteNum'] = '5';
@@ -126,7 +126,7 @@ $System_Config['node_offline_warn']='true';
 $System_Config['login_warn']='true';
 
 #端口池
-$System_Config['min_port']='1024';
+$System_Config['min_port']='0';
 $System_Config['max_port']='65535';
 
 #两种方式相对于ss端口的偏移
@@ -134,7 +134,7 @@ $System_Config['pacp_offset']='-20000';
 $System_Config['pacpp_offset']='-20000';
 
 #测速周期/h
-$System_Config['Speedtest_duration']='6';
+$System_Config['Speedtest_duration']='1';
 
 
 #随机分组，注册时随机分配到的分组，多个分组请用英文半角逗号分隔。
@@ -200,10 +200,10 @@ $System_Config['email_verify_iplimit']='10';
 
 
 #注册时默认加密方式
-$System_Config['reg_method']='chacha20-ietf';
+$System_Config['reg_method']='chacha20';
 
 #注册时默认协议
-$System_Config['reg_protocol']='auth_aes128_md5';
+$System_Config['reg_protocol']='auth_sha1_v4';
 
 #注册时默认协议参数
 $System_Config['reg_protocol_param']='';
